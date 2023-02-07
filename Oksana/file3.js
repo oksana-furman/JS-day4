@@ -1,9 +1,9 @@
 function mouseOver() {
-    document.getElementsByClassName("par").innerHTML = "you are in the circle";
+    document.getElementsByClassName("par")[0].innerHTML = "<br>you are in the circle";
 }
 
 function mouseOut() {
-    document.getElementsByClassName("par").innerHTML = "you are outside of the circle";
+    document.getElementsByClassName("par")[0].innerHTML = "<br>you are outside of the circle";
 }
 
 function clickBG() {
@@ -14,7 +14,7 @@ function dblclickBG() {
     document.getElementById("circle").style.backgroundColor = "blue";
 }
 
-document.getElementById("circle").addEventListener("onmouseover", mouseOver);
-document.getElementById("circle").addEventListener("onmousout", mouseOut);
+document.getElementById("circle").addEventListener("mouseover", mouseOver);
+document.getElementById("circle").addEventListener("mouseout", mouseOut);
 document.getElementById("circle").addEventListener("click", clickBG);
 document.getElementById("circle").addEventListener("dblclick", dblclickBG);
