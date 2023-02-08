@@ -7,11 +7,13 @@ function mouseOut() {
 }
 
 function clickBG() {
-    document.getElementById("circle").style.backgroundColor = "grey";
+    document.getElementById("circle").style.backgroundColor = "white";
+    document.getElementsByClassName("container")[0].style.backgroundColor = "grey";
 }
 
 function dblclickBG() {
-    document.getElementById("circle").style.backgroundColor = "blue";
+    document.getElementById("circle").style.backgroundColor = "white";
+    document.getElementsByClassName("container")[0].style.backgroundColor = "blue";
 }
 
 document.getElementById("circle").addEventListener("mouseover", mouseOver);
